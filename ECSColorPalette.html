@@ -1,0 +1,57 @@
+<html> 
+<head> 
+    <title>ECS Color Palette</title>
+	<link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" type="text/stylesheet" >
+	<link rel="stylesheet" href="./assets/css/app.css" type="text/stylesheet" >
+	<script src="AIRAliases.js" type="text/javascript"></script>
+	<script type="text/javascript" src="AIRIntrospector.js"></script>
+</head> 
+<body> 
+
+<div class="navbar navbar-inverse navbar-static-top">
+	<div class="navbar-inner">
+		<ul class="nav pull-left">
+			<li class="active"><a href="#process">Process</a></li>
+		</ul>
+		<ul class="nav pull-right">
+			<span class="app_title">ECS Color Palette</span>
+		</ul>
+	</div>
+</div>
+
+<div id="app_window">
+	
+	<!-- Process Window -->
+	<div id="process" ondragenter="doDragStart(event)" ondragover="doDragOver(event)" ondrop="onDrop(event)">
+
+		<div id="color-data"></div>
+		
+		<div id="file-data"></div>
+	
+		<div id="content">
+			<div id="swatches"></div>
+			<div id="output">
+				<div id="json" class="color_string_output"></div>
+				<div id="rgb" class="color_string_output"></div>
+			</div>
+		</div>
+	
+		<div class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
+			<div class="navbar-inner">
+				<ul class="nav pull-right">
+					<li><a href="#" id="reset"><i class="icon-eject icon-white"></i> Reset</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+
+</div>
+
+<script src="./assets/vendor/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="./assets/vendor/sprintf-0.7-beta1.js" type="text/javascript"></script>
+<script src="./assets/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/color_processor.js" type="text/javascript"></script>
+<script src="./assets/js/app.js" type="text/javascript"></script>
+
+</body> 
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<application xmlns="http://ns.adobe.com/air/application/2.7"> 
+    <id>ecs.ColorPalette</id>
+    <versionNumber>0.1</versionNumber>
+    <filename>ECS Color Palette</filename>
+	<name>ECS Color Palette</name>
+    <initialWindow>
+        <content>ECSColorPalette.html</content>
+        <visible>true</visible>
+        <width>800</width>
+        <height>500</height> 
+		<minSize>800 500</minSize>
+		<maxSize>800 500</maxSize>
+    </initialWindow> 
+    <icon> 
+        <image16x16>assets/icons/ColorPalette-16.png</image16x16> 
+        <image32x32>assets/icons/ColorPalette-32.png</image32x32> 
+        <image48x48>assets/icons/ColorPalette-48.png</image48x48> 
+        <image128x128>assets/icons/ColorPalette-128.png</image128x128>  
+    </icon> 
+</application>

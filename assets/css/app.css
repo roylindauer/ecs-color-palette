@@ -1,0 +1,122 @@
+body{
+	background: #333333;
+	font: normal 85%/100% "Tahoma", Helvetica, sans-serif;
+}
+.app_title{
+	padding-top: 10px;
+	color: #666666;
+	display: block;
+	font-size: 1.2em;
+	text-transform: lowercase;
+}
+#app_window{
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(../img/grey_wash_wall.png) repeat #333333;
+	z-index: 1;
+}
+
+.navbar .navbar-inner{
+	background: url(../img/black_linen_v2.png) repeat #333333;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+	position: relative;
+	z-index: 2;
+}
+
+#process{
+	background: transparent url(../img/drop-icon.png) no-repeat center center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0; 
+}
+#process:hover{
+	cursor: copy;
+}
+#process.loaded{ background-image: none; }
+#my-canvas{
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	display: block;
+	width: 150px;
+	margin: 20px;
+	float: left;
+	border: 2px solid #222222;
+}
+
+#content{
+	position: absolute;
+	left: 170px;
+	top: 60px;
+	bottom: 40px;
+	right: 0;
+	padding: 20px;
+	color: #e5e5e5;
+	overflow: auto;
+	display: none;
+	font-family: monospace;
+	font-size: 100%;
+}
+
+#color-data{
+	position: relative;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 60px;
+	background: #222222; 
+	border-bottom: 1px solid #666666; 
+	overflow: hidden;
+	display: none;
+}
+.color_slice{
+	position: relative;
+	float: left;
+	height: 100%;
+	display: inline-block;
+	width: 1%;
+	padding: 0;
+	margin: 0;
+	line-height: normal;
+}
+.color_slice:hover{
+	cursor: pointer;
+	outline: 2px solid #ffffff;
+	outline-offset: -2px;
+}
+.color_slice.selected{
+	outline: 2px solid #ff0000;
+	outline-offset: -2px;
+}
+
+#footer{
+	display: none;
+}
+
+#swatches{
+	clear: both;
+	margin: 0 0 20px 0;
+	position: relative;
+}
+.color_swatch{
+	display: block;
+	height: 36px;
+	width: 36px;
+	margin: 2px;
+	border: 2px solid #ffffff;
+	float: left;
+	background: #000000;
+	border-radius: 1px;
+	-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+
+#output{
+	clear: both;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
